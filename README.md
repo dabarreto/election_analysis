@@ -20,4 +20,4 @@ No challenges nor difficuties were encountered while working with the data.
 Created by: Ana Daniela Barreto Rodriguez.\
 Data Analytics Bootcamp - Tecnologico de Monterrey.\
 © 2020 - 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.\
-September 29, 2021.
+October 10, 2021.
