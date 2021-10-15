@@ -1,6 +1,6 @@
 # ELECTION ANALYSIS
 # ----------------------------------------------------------
-# This analysis include the results of the elections:
+# This analysis include the results of the elections.
 # ----------------------------------------------------------
 # 1. The total number of votes cast.
 # 2. A complete list of candidates who received votes.
@@ -26,6 +26,8 @@ total_votes = 0
 # Declare empty list to get Candidate Options
 candidate_options = []
 
+# Declare empty dictionary to count votes for each candidate
+candidate_votes = {}
 
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
@@ -54,5 +56,27 @@ with open(file_to_load) as election_data:
         if candidate_name not in candidate_options:
             candidate_options.append(candidate_name)
 
+            # Set each candidate vote to zero to track their vote count
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's vote
+        candidate_votes[candidate_name] += 1
+
+    # Determine the percentage of votes for each candidate by looping through the counts
+    # Iterate through the candidate list
+    for candidate_name in candidate_votes:
+
+        # Retrieve vote count of a candidate
+        votes = candidate_votes[candidate_name]
+
+        # Calculate the percentage of votes
+        vote_percentage = float(votes) / float(total_votes) * 100
+
+        # Print the candidate name and percentage of votes
+        print(f"{candidate_name}: received {vote_percentage:.1f}% of the vote.")
+
 # Print the candidate list
-print(candidate_options)
+# print(candidate_options)
+
+# Print the candidate vote dictionary
+# print(candidate_votes)
