@@ -29,6 +29,17 @@ candidate_options = []
 # Declare empty dictionary to count votes for each candidate
 candidate_votes = {}
 
+# Winning Candidate and Winning Count Tracker
+# Declare a variable that hols an empty value for the winning candidate
+winning_candidate = ""
+
+# Declare a variable for the "winning count" equal to zero.
+winning_count = 0
+
+# Declare a variable for the "winning percentage" equal to zero.
+winning_percentage = 0
+
+
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
 
@@ -72,8 +83,31 @@ with open(file_to_load) as election_data:
         # Calculate the percentage of votes
         vote_percentage = float(votes) / float(total_votes) * 100
 
-        # Print the candidate name and percentage of votes
-        print(f"{candidate_name}: received {vote_percentage:.1f}% of the vote.")
+        # Print the candidate name, vote count and percentage of votes
+        print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+
+        # Determine winning vote count and candidate
+        # Determine if the votes is greater than the winning count.
+        # If the vote count is greater than the winning_count and the percentage is greater than the winning_percentage
+        # Set the winning_count equal to the votes and set the winning_percentage equal to the vote_percentage
+        # Set the winning_count equal to the variable, candidate_name, in the forr loop
+
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            # If true then set winning_count = votes and winning_percentage = vote_percentage
+            winning_count = votes
+            winning_percentage = vote_percentage
+            # And, set the winning_candidate equal to the candidate's name
+            winning_candidate = candidate_name
+
+    # Print out the winning candidate, vote count and percentage 
+    winning_candidate_summary = (
+        f"--------------------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count:,}\n"
+        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"--------------------------------\n")
+    print(winning_candidate_summary)
+
 
 # Print the candidate list
 # print(candidate_options)
