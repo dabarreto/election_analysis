@@ -127,8 +127,3 @@ with open(file_to_save, "w") as txt_file:
     # Save the winning candidate's name to the text file
     txt_file.write(winning_candidate_summary)
 
-# Print the candidate list
-# print(candidate_options)
-
-# Print the candidate vote dictionary
-# print(candidate_votes)
