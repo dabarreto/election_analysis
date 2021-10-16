@@ -18,7 +18,7 @@ The Colorado Board of Elections employee has given you the following tasks to co
 
 ## Results Summary
 
-The Analysis of the election show that:
+The Python code [PyPoll.py](https://github.com/dabarreto/election_analysis/blob/main/PyPoll.py) includes the step to analyze the elections by county, and the results are:
 
 ![Vote_Results](https://github.com/dabarreto/election_analysis/blob/main/Analysis/results_image.PNG)
 
