@@ -1,6 +1,6 @@
 # ELECTION ANALYSIS
 # ----------------------------------------------------------
-# This analysis include the results of the elections.
+# The Election Audit analysis for The Colorado Board of Elections include the following activities:
 # ----------------------------------------------------------
 # 1. The total number of votes cast.
 # 2. A complete list of candidates who received votes.
@@ -29,6 +29,9 @@ candidate_options = []
 # Declare empty dictionary to count votes for each candidate
 candidate_votes = {}
 
+# 1: Create a county list and county votes dictionary.
+
+
 # Winning Candidate and Winning Count Tracker
 # Declare a variable that hols an empty value for the winning candidate
 winning_candidate = ""
@@ -39,6 +42,7 @@ winning_count = 0
 # Declare a variable for the "winning percentage" equal to zero.
 winning_percentage = 0
 
+# 2: Track the largest county and county voter turnout.
 
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
@@ -63,6 +67,8 @@ with open(file_to_load) as election_data:
         # Print the candidate name for each row
         candidate_name = row[2]
 
+        # 3: Extract the county name from each row.
+
         # If the candidate does not match any existing candidate add it to the list of candidates
         if candidate_name not in candidate_options:
             candidate_options.append(candidate_name)
@@ -72,6 +78,19 @@ with open(file_to_load) as election_data:
 
         # Add a vote to that candidate's vote count
         candidate_votes[candidate_name] += 1
+
+        # 4a: Write an if statement that checks that the
+        # county does not match any existing county in the county list.
+
+
+            # 4b: Add the existing county to the list of counties.
+
+
+            # 4c: Begin tracking the county's vote count.
+
+
+        # 5: Add a vote to that county's vote count.
+
 
 # Save the results to a text file
 with open(file_to_save, "w") as txt_file:
@@ -86,6 +105,25 @@ with open(file_to_save, "w") as txt_file:
 
     # Save the final vote count to the text file.
     txt_file.write(election_results)
+
+    # 6a: Write a for loop to get the county from the county dictionary.
+
+        # 6b: Retrieve the county vote count.
+
+        # 6c: Calculate the percentage of votes for the county.
+
+
+         # 6d: Print the county results to the terminal.
+
+         # 6e: Save the county votes to a text file.
+
+         # 6f: Write an if statement to determine the winning county and get its vote count.
+
+
+    # 7: Print the county with the largest turnout to the terminal.
+
+
+    # 8: Save the county with the largest turnout to a text file.
 
     # Determine the percentage of votes for each candidate by looping through the counts
     # Iterate through the candidate list
