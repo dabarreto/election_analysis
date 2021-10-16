@@ -32,6 +32,9 @@ The Python code [PyPoll.py](https://github.com/dabarreto/election_analysis/blob/
 - By keeping the same structure in the input file (Ballot ID,County,Candidate).
 - The code can be adapted to only get results by candidate if needed.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Important: Keep in mind that you have to have the same folder structure. I had problems with my Anaconda and Python installation and the paths in my system moved, so make sure to remove/addapt the relative paths to your working directory.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Created by: Ana Daniela Barreto Rodriguez.\
