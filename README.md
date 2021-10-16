@@ -2,13 +2,16 @@
 
 ## Project Overview
 
-The Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+The purpose of this analysis is to determine the results of a recent local congressional election and submit the results to The Colorado Board of Elections.
 
-1. Calculate the local number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+The summary results include:
+- The total local number of votes cast.
+- The total votes by County.
+- The County with the highest turnout.
+- The list of candidates who received votes.
+- The total number of votes each candidate received.
+- The percentage of votes each candidate won.
+- The winner of the election based on popular vote.
 
 ### Resources
 
@@ -16,19 +19,18 @@ The Colorado Board of Elections employee has given you the following tasks to co
 - Software: Python 3.7.6, Visual Studio Code 1.38.1
 ------------------------------------------
 
-## Results Summary
+## Election-Audit Results:
 
-The Python code [PyPoll.py](https://github.com/dabarreto/election_analysis/blob/main/PyPoll.py) includes the step to analyze the elections by county, and the results are:
+The Python code [PyPoll.py](https://github.com/dabarreto/election_analysis/blob/main/PyPoll.py) includes the step by step to analyze the elections by county.
 
+The election outcomes are in [election_analysis.tx](https://github.com/dabarreto/election_analysis/blob/main/Analysis/election_analysis.txt) and include a breakdown by county and candidate:
 ![Vote_Results](https://github.com/dabarreto/election_analysis/blob/main/Analysis/results_image.PNG)
 
 
-## Challenge Overview
-
-### Challenge Summary
-
-
-
+## Election-Audit Summary:
+The Python code [PyPoll.py](https://github.com/dabarreto/election_analysis/blob/main/PyPoll.py) can be used in other elections:
+- By keeping the same structure in the input file (Ballot ID,County,Candidate).
+- The code can be adapted to only get results by candidate if needed.
 
 
 
