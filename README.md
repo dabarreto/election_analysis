@@ -23,9 +23,9 @@ The Analysis of the election show that:
 ![Vote_Results](https://github.com/dabarreto/election_analysis/blob/main/Analysis/results_image.PNG)
 
 
-### Challenge Overview
+## Challenge Overview
 
-## Challenge Summary
+### Challenge Summary
 
 
 
